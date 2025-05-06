@@ -1,0 +1,47 @@
+@use "variables"as *;
+@use "mixins"as *;
+
+p-editor {
+    .ql-editor {
+        // height: 4.25rem;
+    }
+
+    .ql-editor {
+        border: none !important;
+    }
+
+    .variant-filled {
+        .ql-editor {
+            min-height: 8.938rem;
+        }
+
+        .p-editor-toolbar,
+        .ql-editor {
+            background-color: $colors-grey-50 !important;
+            border: 0 !important;
+        }
+
+    }
+
+    .p-editor-toolbar,
+    .ql-editor {
+        border: 0 !important;
+        background-color: unset !important;
+    }
+
+    .p-editor-toolbar {
+        border-bottom: 0.0625rem solid $colors-grey-150 !important;
+    }
+
+    .p-editor-content {
+        border: 0 !important;
+    }
+
+
+
+    .rounded-none {
+        .ql-editor {
+            border-radius: 0 !important;
+        }
+    }
+}

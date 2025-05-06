@@ -1,0 +1,24 @@
+@use "variables"as *;
+
+.conversation-status {
+    &.new {
+        color: $primary-700;
+    }
+
+    &.open {
+        color: $colors-blue-700;
+    }
+
+    &.read {
+        color: $colors-orang-500;
+    }
+
+    &.closed {
+        color: $colors-red-500;
+    }
+
+    &.expired {
+        color: $colors-red-700;
+    }
+
+}

@@ -1,0 +1,35 @@
+@use "variables"as *;
+@use "mixins"as *;
+
+p-button {
+    &.add-btn {
+        .p-button {
+            height: 2.625rem;
+            font-size: 0.875rem;
+            line-height: 1.3;
+            font-weight: 500;
+            padding: 1rem;
+            gap: 0.625rem;
+            &:hover{
+                background-color: $primary-700;
+                border-color: $primary-700;
+            }
+            .p-button-icon {
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    &.filter-btn {
+        .p-button {
+            width: 2.625rem;
+            height: 2.625rem;
+            background-color: $primary-light;
+            border: none;
+            &:hover {
+                    background-color: $primary-light;
+                    border-color: $primary-light;
+                }
+        }
+    }
+}

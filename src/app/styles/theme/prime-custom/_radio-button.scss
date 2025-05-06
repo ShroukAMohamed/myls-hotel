@@ -1,0 +1,7 @@
+@use "variables" as *;
+
+p-radiobutton {
+    .p-radiobutton-box {
+        border-color: $primary-700;
+    }
+}

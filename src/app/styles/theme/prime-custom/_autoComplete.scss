@@ -1,0 +1,71 @@
+@use "variables"as *;
+@use "mixins"as *;
+
+p-autocomplete {
+    width: 100%;
+    display: flex;
+
+    .p-autocomplete {
+        width: 100%;
+        min-height: 3rem;
+
+        input.p-inputtext {
+            width: 100%;
+        }
+
+        .p-autocomplete-dropdown {
+            background-color: $colors-grey-50;
+            border: 0;
+            color: var(--hollat-select-dropdown-color) !important;
+        }
+
+        .p-autocomplete-input-multiple {
+
+            &.p-variant-filled {
+                min-height: 3rem;
+                background-color: $colors-grey-50;
+                border: 0;
+            }
+
+            .p-autocomplete-input-chip input {
+                font-size: 0.875rem;
+            }
+
+            p-chip {
+                .p-chip {
+                    background-color: $colors-blue-100;
+                    padding: 0.1875rem 0.375rem;
+
+                    .p-chip-label {
+                        font-size: 0.75rem;
+                        color: $colors-blue-950;
+                        font-weight: 700;
+                    }
+
+                    .p-chip-remove-icon {
+                        width: 0.875rem;
+                        height: 0.875rem;
+
+                        .p-autocomplete-chip-icon {
+                            display: flex;
+
+                            svg {
+                                width: 0.875rem;
+                                height: 0.875rem;
+                                color: $colors-blue-950;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.p-overlay {
+
+    .p-autocomplete-overlay {
+        width: 100%;
+    }
+}

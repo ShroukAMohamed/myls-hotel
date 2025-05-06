@@ -1,0 +1,11 @@
+@use "variables"as *;
+@use "mixins"as *;
+
+.p-datepicker-panel {
+    .p-datepicker-header {
+        // direction: ltr !important;
+// @include rtl-only {
+//     direction: rtl !important;
+// }
+    }
+}

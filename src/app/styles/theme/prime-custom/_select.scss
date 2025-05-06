@@ -1,0 +1,72 @@
+@use "variables"as *;
+@use "mixins"as *;
+
+p-select {
+    &.p-select {
+        min-height: 3rem;
+        font-size: 0.875rem;
+
+        .p-select-label {
+            display: flex;
+            line-height: 2.25;
+        }
+
+        &.p-variant-filled {
+            min-height: 3rem;
+            background-color: $colors-grey-50;
+            border: 0;
+            font-size: 0.875rem;
+
+            .p-select-label {
+                display: flex;
+                line-height: 2.25;
+            }
+        }
+
+        .p-select-clear-icon {
+            left: auto;
+
+            @include rtl-only {
+                left: var(--hollat-select-dropdown-width);
+                right: auto;
+            }
+        }
+    }
+}
+
+.p-overlay {
+    // max-width: min-content !important;
+    right: auto !important;
+
+    .p-select-overlay {
+        // width: 100%;
+
+
+        p-iconfield {
+            .p-inputtext.p-select-filter {
+                padding-inline-end: 2rem;
+            }
+
+            p-inputicon {
+                position: absolute;
+                top: 1.5rem;
+                right: 1.625rem;
+                left: auto;
+
+                @include rtl-only {
+                    left: 1.625rem;
+                    right: auto;
+                }
+            }
+        }
+
+        .p-select-clear-icon {
+            left: auto;
+
+            @include rtl-only {
+                left: var(--hollat-select-dropdown-width);
+                right: auto;
+            }
+        }
+    }
+}
