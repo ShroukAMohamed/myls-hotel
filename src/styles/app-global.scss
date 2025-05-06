@@ -3,6 +3,7 @@
 @use "./theme/shared/variables" as *;
 
 @tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 
@@ -51,7 +52,7 @@ body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
 
-    hollat-layout {
+    myls-layout {
       display: none;
       padding: 0;
 
@@ -60,12 +61,12 @@ body {
       }
     }
 
-    hollat-header {
+    myls-header {
       display: none !important;
       padding: 0;
     }
 
-    hollat-side-nav {
+    myls-side-nav {
       display: none !important;
       padding: 0;
     }
@@ -75,7 +76,7 @@ body {
 }
 
 
-#hollat-splash-screen {
+#myls-splash-screen {
   position: fixed;
   top: 0;
   left: 0;

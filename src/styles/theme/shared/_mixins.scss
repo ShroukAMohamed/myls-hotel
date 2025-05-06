@@ -1,0 +1,68 @@
+//Executed when for rtl direction only
+@mixin rtl-only {
+  html[dir=rtl] & {
+    @content;
+  }
+}
+
+//Executed when for ltr direction only
+@mixin ltr-only {
+  html[dir=ltr] & {
+    @content;
+  }
+}
+
+//Responsive
+//=========================================================================
+
+//Respond to Xsmall
+
+@mixin respond-to-2Xsmall() {
+  @media (min-width: 300px) and (max-width: 409px) {
+    @content;
+  }
+}
+
+@mixin respond-to-Xsmall() {
+  @media (min-width: 300px) and (max-width: 639px) {
+    @content;
+  }
+}
+
+//Respond to small
+@mixin respond-to-small() {
+  @media (min-width: 640px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+//Respond to medium
+@mixin respond-to-medium() {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+//Respond to large
+@mixin respond-to-large() {
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+//Respond to Xlarge
+@mixin respond-to-Xlarge() {
+  @media (min-width: 1280px) and (max-width: 1535px) {
+    @content;
+  }
+}
+
+//Respond to 2Xlarge
+@mixin respond-to-2Xlarge() {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+//=========================================================================
+//=========================================================================

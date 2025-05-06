@@ -7,12 +7,13 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": true
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "myls",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -32,7 +33,21 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              {
+                "bundleName": "app-global",
+                "input": "src/styles/app-global.scss",
+                "inject": true
+              },
+              {
+                "bundleName": "prime-custom-theme",
+                "input": "src/styles/theme/_theme.scss",
+                "inject": true
+              },
+              {
+                "bundleName": "prime-icon",
+                "input": "node_modules/primeicons/primeicons.css",
+                "inject": true
+              }
             ],
             "scripts": [],
             "server": "src/main.server.ts",
