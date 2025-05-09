@@ -1,0 +1,89 @@
+@use "../../../styles/theme/shared/variables" as *;
+@use "../../../styles/theme/shared/mixins" as *;
+
+:host {
+  .header-container {
+    padding: 1rem 2.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: white;
+
+    p-menubar {
+      @include respond-to-large() {
+        ::ng-deep {
+          .p-menubar {
+            display: flex;
+            justify-content: space-around;
+
+            .p-menubar-root-list {
+              display: flex;
+              row-gap: 0.5rem;
+            }
+          }
+
+          .p-menubar-end {
+            margin-left: 0;
+            margin-right: 0;
+            align-self: center;
+          }
+        }
+      }
+
+      @include respond-to-Xlarge() {
+        ::ng-deep {
+          .p-menubar {
+            display: flex;
+            justify-content: space-around;
+
+            .p-menubar-root-list {
+              display: flex;
+              row-gap: 0.5rem;
+            }
+          }
+
+          .p-menubar-end {
+            margin-left: 0;
+            margin-right: 0;
+            align-self: center;
+          }
+        }
+      }
+
+      @include respond-to-2Xlarge() {
+        ::ng-deep {
+          .p-menubar {
+            display: flex;
+            justify-content: space-around;
+
+            .p-menubar-root-list {
+              display: flex;
+              row-gap: 0.5rem;
+            }
+          }
+
+          .p-menubar-end {
+            margin-left: 0;
+            margin-right: 0;
+            align-self: center;
+          }
+        }
+      }
+    }
+
+    p-button {
+      ::ng-deep {
+        .p-button {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .logo {
+      height: 45px;
+      width: 160px !important;
+    }
+  }
+}

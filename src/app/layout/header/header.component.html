@@ -1,1 +1,28 @@
-<p>header works!</p>
+<div class="bg-black header-container">
+  <p-menubar [model]="items" class="">
+    <ng-template pTemplate="start">
+      <div class="flex items-center gap-[0.786rem]">
+        <a>
+          <img src="images/logo.png" alt="myls-logo" class="mr-2 logo" />
+        </a>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="center" #item let-item let-root="root">
+      <a [routerLink]="item.routerLink" class="flex items-center p-menubar-item-link mx-5">
+          <span>{{ item.label }}</span>
+      </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex items-center gap-[0.786rem]">
+        <a [routerLink]="['/', _TranslateService.currentLang, 'login']">
+          <button class="btn-secondary bg-white rounded-full px-1">
+            <i class="pi pi-user text-gray-700 font-bold"></i>
+          </button>
+        </a>
+        <p-button class="flex items-center" [text]="true" styleClass="change-lang-btn" (onClick)="changeLang()">
+          <i class="pi pi-globe"></i>
+        </p-button>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

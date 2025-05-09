@@ -1,0 +1,15 @@
+{
+  "_Home": {
+    "navbar": {
+      "home": "HOME",
+      "about": "ABOUT US",
+      "contact": "CONTACT US"
+    },
+    "header": {
+      "brandName": "MYLS Hotels",
+      "title": "Where Elegance Meets Modern Comfort",
+      "description": "Where every detail is crafted for your comfort, and every moment is designed to feel like a gentle escape. Step into a world where luxury meets serenity, and let us transform your stay into an unforgettable experience.",
+      "button": "Book Now"
+    }
+  }
+}
