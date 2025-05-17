@@ -1,0 +1,31 @@
+:host {
+  .houses-details-container {
+    background-image: linear-gradient(to top, rgba(11, 11, 11, 0.687), rgba(7, 7, 7, 0.494) 500px, rgba(14, 14, 14, 0.808)), url('../../../../../../public/images/pexels-asadphoto-12858509.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    p-paginator {
+      ::ng-deep {
+        .p-paginator {
+          background-color: transparent !important;
+
+          button {
+            color: white !important;
+            font-size: 1.2rem !important;
+
+            &:hover {
+              background-color: white !important;
+              color: black !important;
+            }
+          }
+
+          .p-paginator-page-selected {
+            background-color: white !important;
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}

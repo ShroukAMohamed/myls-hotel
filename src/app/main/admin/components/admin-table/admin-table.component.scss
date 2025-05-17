@@ -1,0 +1,42 @@
+:host {
+  h2 {
+    i {
+      font-size: 1.875rem;
+    }
+  }
+
+  ::ng-deep {
+    .p-button {
+      &:hover {
+        background-color: #909090 !important;
+      }
+    }
+  }
+
+  .card {
+    p-table {
+      ::ng-deep {
+        .p-paginator {
+          border-radius: 0 !important;
+          border-bottom-left-radius: 0.5rem !important;
+          border-bottom-right-radius: 0.5rem !important;
+        }
+
+        .p-datatable-table-container {
+          border-radius: 0 !important;
+          border-top-left-radius: 0.5rem !important;
+          border-top-right-radius: 0.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+::ng-deep {
+  p-button {
+    &:hover {
+      border-radius: 0.375rem !important;
+      background-color: #909090 !important;
+    }
+  }
+}

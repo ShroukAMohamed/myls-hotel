@@ -1,0 +1,34 @@
+<div class="bg-black header-container">
+  <p-menubar [model]="items" class="">
+    <ng-template pTemplate="start">
+      <div class="flex items-center gap-[0.786rem]">
+        <a>
+          <img src="images/logo.png" alt="myls-logo" class="mr-2 logo" />
+        </a>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="center" #item let-item let-root="root">
+      <a [routerLink]="item.routerLink" routerLinkActive="active" router class="flex items-center p-menubar-item-link mx-5">
+          <span>{{ item.label }}</span>
+      </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="flex items-center gap-[0.786rem]">
+        <div *ngIf="isLogin">
+          <p-menu #menu [model]="menuItems" [popup]="true" />
+          <button (click)="menu.toggle($event)" class="btn-secondary rounded-full px-1 bg-green-600 text-white">
+            <i class="pi pi-user font-bold"></i>
+          </button>
+        </div>
+        <a *ngIf="!isLogin" [routerLink]="['/', _TranslateService.currentLang, 'login']">
+          <button class="btn-secondary rounded-full px-1 bg-white text-gray-700">
+            <i class="pi pi-user font-bold"></i>
+          </button>
+        </a>
+        <p-button class="flex items-center" [text]="true" styleClass="change-lang-btn" (onClick)="changeLang()">
+          <i class="pi pi-globe"></i>
+        </p-button>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

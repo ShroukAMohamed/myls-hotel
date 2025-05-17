@@ -1,0 +1,45 @@
+<div class="houses-section-container flex flex-col justify-center items-center h-full">
+  <div class="text-center pb-32">
+    <h2 class="text-6xl font-semibold pb-10 text-white"> Book In MYLS Hotels </h2>
+    <p class="text-lg text-white">You can book your rooms in our hotels now and enjoy our services </p>
+  </div>
+  <div class="container mx-auto">
+    <div class="grid grid-cols-3 justify-items-center place-items-center">
+      <div class="room-item w-full max-w-sm">
+        <img class="w-full h-52 rounded-t-md" [src]="rooms[2].image" alt="room image">
+        <div class="room-item-content bg-gray-200 rounded-b-md p-4">
+          <div class="flex justify-between">
+            <h3> Room number: {{ rooms[2].name }} </h3>
+            <p> Type: {{ rooms[2].type }} </p>
+          </div>
+          <p> Features: {{ rooms[2].description }} </p>
+          <p> Price: {{ rooms[2].price }} </p>
+        </div>
+      </div>
+      <div class="room-item w-full max-w-sm">
+        <img class="w-full h-52 rounded-t-md" [src]="rooms[3].image" alt="room image">
+        <div class="room-item-content bg-white rounded-b-md p-4">
+          <div class="flex justify-between">
+            <h3> Room number: {{ rooms[3].name }} </h3>
+            <p> Type: {{ rooms[3].type }} </p>
+          </div>
+          <p> Features: {{ rooms[3].description }} </p>
+          <p> Price: {{ rooms[3].price }} </p>
+        </div>
+      </div>
+      <div class="room-item w-full max-w-sm">
+        <img class="w-full h-52 rounded-t-md" [src]="rooms[4].image" alt="room image">
+        <div class="room-item-content bg-white rounded-b-md p-4">
+          <div class="flex justify-between">
+            <h3> Room number: {{ rooms[4].name }} </h3>
+            <p> Type: {{ rooms[4].type }} </p>
+          </div>
+          <p> Features: {{ rooms[4].description }} </p>
+          <p> Price: {{ rooms[4].price }} </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center pt-20 text-xl font-semibold"><a [routerLink]="['/',_TranslateService.currentLang,'houses']" class="text-white">SEE ALL HOUSES <span class="ms-2">>></span></a></div>
+  </div>
+
+</div>

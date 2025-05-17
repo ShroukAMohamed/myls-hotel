@@ -1,0 +1,20 @@
+@use "../../../../../styles/theme/shared/mixins" as *;
+@use "../../../../../styles/theme/shared/variables" as *;
+
+:host {
+  form {
+    button {
+      background-color: black;
+    }
+
+    input {
+      &::placeholder {
+        font-size: 0.875rem;
+
+        @include respond-to-Xsmall() {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

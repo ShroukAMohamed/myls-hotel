@@ -1,0 +1,74 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+p-toast {
+  .p-toast {
+    p-toastitem {
+      .p-toast-message {
+        font-size: 1.125rem;
+        font-weight: 600;
+
+        &.p-toast-message-error {
+          background-color: $colors-red-400;
+          color: $colors-grey-0;
+          border-color: $colors-red-400;
+        }
+
+        &.p-toast-message-success {
+          background-color: $colors-green-400;
+          color: $colors-grey-0;
+        }
+
+        &.p-toast-message-info {
+          background-color: $colors-blue-700;
+          color: $colors-grey-0;
+        }
+
+        .p-toast-message-content {
+          align-items: center;
+
+          .p-toast-detail {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: $colors-grey-0;
+          }
+
+          .p-toast-message-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+
+            .p-iconwrapper {
+              width: 1.25rem;
+              height: 1.25rem;
+            }
+          }
+
+          p-button {
+            .p-button {
+              padding: 0;
+              border: 0.0625rem solid $colors-grey-0 !important;
+              background-color: transparent !important;
+              width: 1.25rem;
+              height: 1.25rem;
+
+              .p-button-label {
+                display: none;
+              }
+
+              timesicon.p-iconwrapper {
+                color: $colors-blue-0;
+                width: 0.75rem;
+                height: 0.75rem;
+              }
+
+              span {
+                color: $colors-grey-0 !important;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

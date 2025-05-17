@@ -1,0 +1,32 @@
+<div class="houses-details-container">
+  <div class="py-36">
+    <div class="text-center pb-40">
+      <h2 class="text-6xl font-semibold pb-5 text-white"> {{"_Home.bookNow" | translate}} </h2>
+      <p class="text-lg text-white"> {{"_Home.serviceText" | translate}} </p>
+    </div>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-3 justify-items-center place-items-center gap-x-5 gap-y-14">
+        @for (item of items; track $index) {
+          <div class="room-item w-full max-w-sm">
+          <img class="w-full h-full max-h-52 rounded-t-md" [src]="item.image" alt="room image">
+          <div class="room-item-content bg-gray-200 rounded-b-md py-4 px-6">
+            <div class="flex justify-between">
+              <h3 class="font-semibold"> House Number : <span class=" py-2 text-gray-700">{{ item.name }}</span> </h3>
+              <p class="font-semibold"> Type : <span class=" py-2 text-gray-700">{{ item.type }}</span> </p>
+            </div>
+            <p class="py-2 font-semibold"> Features : <span class="text-sm py-2 text-gray-700 font-normal">{{ item.description }}</span> </p>
+            <p class="font-semibold"> Price : <span class=" py-2 text-gray-700">{{ item.price }}</span> </p>
+          </div>
+        </div>
+        }
+      </div>
+      <div class=" mt-20">
+          <p-paginator
+              [rows]="rows"
+              [first]="first"
+              [totalRecords]="totalRecords"
+              (onPageChange)="onPageChange($event)" />
+      </div>
+    </div>
+  </div>
+</div>

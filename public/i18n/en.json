@@ -1,0 +1,44 @@
+{
+  "_Home": {
+    "welcome": "Welcome !",
+    "welcomeBack": "Welcome Back !",
+    "BookNow": "Book In MYLS Beach",
+    "serviceText": "You can book your rooms in our hotels now and enjoy our services",
+    "navbar": {
+      "home": "HOME",
+      "houses": "BEACH HOUSES",
+      "contact": "CONTACT US",
+      "adminPanel": "ADMIN PANEL"
+    },
+    "houses": {
+      "houseNumber": "House Number :",
+      "type": "Type :",
+      "price": "Price :",
+      "features": "Features :",
+      "description": "Description :",
+      "bookNow": "Book Now"
+    },
+    "header": {
+      "brandName": "MYLS Beach",
+      "title": "Where Elegance Meets Modern Comfort",
+      "description": "Where every detail is crafted for your comfort, and every moment is designed to feel like a gentle escape. Step into a world where luxury meets serenity, and let us transform your stay into an unforgettable experience.",
+      "button": "Book Now"
+    }
+  },
+  "_Auth": {
+    "loginText": "Please login to complete the booking process",
+    "registerText": "Please sign up to complete the booking process",
+    "enterEmail": "Enter Email",
+    "enterPassword": "Enter Password",
+    "login": "Login",
+    "register": "Register",
+    "notHaveAccount": "Don't have an account ?",
+    "alreadyHaveAccount": "Already have an account ?",
+    "validation": {
+      "requiredEmail": " Email is required",
+      "invalidEmail": "Invalid email",
+      "requiredPassword": " Password is required",
+      "passwordHint": "Pasword must be between 6-15 with no special characters"
+    }
+  }
+}
